@@ -1,0 +1,24 @@
+{
+  "name": "reactify-reddit",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/app.jsx -o build/bundle.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "react": "~0.13.3",
+    "reactify": "~1.1.1",
+    "browserify": "~11.0.1"
+  },
+
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+
+  }
+}
